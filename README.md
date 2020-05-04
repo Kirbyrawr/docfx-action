@@ -1,6 +1,10 @@
 # docfx-action
 A GitHub action to run [DocFX](https://dotnet.github.io/docfx/) and generate a documentation site.
 
+## Developers
+- Nikee -> https://github.com/nikeee (Original Author)
+- Kirbyrawr -> https://github.com/Kirbyrawr
+
 ## Usage
 ```yaml
 jobs:
@@ -10,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     # ...
-    - uses: nikeee/docfx-action@master
+    - uses: Kirbyrawr/docfx-action@master
       name: Build Documentation
       with:
         args: path/to/your/docfx.json
@@ -25,7 +29,7 @@ jobs:
 
 In general, to run `docfx <something>`, you can use:
 ```yaml
-    - uses: nikeee/docfx-action@master
+    - uses: Kirbyrawr/docfx-action@master
       with:
         args: <something>
 ```
